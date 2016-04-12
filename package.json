@@ -1,0 +1,23 @@
+{
+  "name": "namegen",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmfcProjs/NameGen.git"
+  },
+  "author": "gmfc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmfcProjs/NameGen/issues"
+  },
+  "homepage": "https://github.com/gmfcProjs/NameGen#readme",
+  "dependencies": {
+    "foswig": "^1.1.1",
+    "request": "^2.70.0"
+  }
+}
