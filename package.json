@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gmfcProjs/NameGen#readme",
   "dependencies": {
+    "cli-color": "^1.1.0",
     "foswig": "^1.1.1",
     "request": "^2.70.0"
   }

@@ -2,7 +2,7 @@ var request = require("request");
 var Foswig = require('foswig');
 //var chain = new Foswig(4);
 
-var url = "https://pt.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json";
+var url = "https://de.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json";
 
 request({
   url: url,
@@ -38,7 +38,7 @@ function doTheThing(thingy) {
 
     // dicionario pronto
 
-  getWords(palavras);
+    getWords(palavras);
 
   }
 
@@ -51,7 +51,7 @@ function getWords(dic) {
 
   console.log("======================================================================");
   //console.log(text);
-  var chain = new Foswig(3);
+  var chain = new Foswig(2);
   //console.log(dic[0]);
   console.log(dic.length);
   chain.addWordsToChain(dic);
