@@ -4,7 +4,7 @@ var clc = require('cli-color');
 var util = require('util');
 var fs = require("fs");
 
-var lang = "fr";
+var lang = "pt";
 
 var url = "https://"+lang+".wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&format=json";
 
@@ -97,7 +97,7 @@ function getValidDicio(callback) {
 
 function getWords(quant) {
   getValidDicio(function(dicio) {
-    var chain = new Foswig(3);
+    var chain = new Foswig(5);
     var palavras = [];
     dicio.splice(0, 1);
     chain.addWordsToChain(dicio);
@@ -126,7 +126,7 @@ function getWords(quant) {
   });
 }
 
-getWords(10000);
+getWords(100);
 
 /*
 en - 4
